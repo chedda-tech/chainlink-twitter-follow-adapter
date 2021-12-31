@@ -4,8 +4,8 @@ This adapter veriries if a twitter user is following another user.
 
 ## Input Params
 
-- `u`: The user ID of Twitter user to check
-- `f`: The twitter handle to check is following the specified user id
+- `userId`: The user ID of Twitter user to check
+- `follower`: The twitter handle to check is following the specified user id
 
 ## Environment Variables
 - `BEARER_TOKEN`: Twitter API bearer token
@@ -52,7 +52,7 @@ yarn start
 ```bash
 curl -X POST 'http://localhost:8080' \
 -H 'Content-Type: application/json' \
---data '{"id": 0,  "data": { "u": "{{account_twitter_id}}", "f": "{{twitter_handle"}}'
+--data '{"id": 0,  "data": { "userId": "{{account_twitter_id}}", "follower": "{{twitter_handle"}}'
 ```
 
 ## Docker

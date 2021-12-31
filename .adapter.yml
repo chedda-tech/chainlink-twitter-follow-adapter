@@ -1,0 +1,13 @@
+name: Chedda Twitter Follow Verifier
+description: Verifies that a given user is following another user
+node_identifier: chedda-twitter-verify
+platforms:
+  - AWS Lambda
+  - Docker
+  - GCP Functions
+data_sources:
+  - name: Example
+    url: https://developer.twitter.com/
+parameters:
+  - userId
+  - follower

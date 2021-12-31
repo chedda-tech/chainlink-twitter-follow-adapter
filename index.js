@@ -14,8 +14,8 @@ const customError = (data) => {
 // with a Boolean value indicating whether or not they
 // should be required.
 const customParams = {
-  userId: ['u', 'uid'],
-  followerUsername: ['f', 'username'],
+  userId: ['u', 'uid', 'userId'],
+  followerUsername: ['f', 'username', 'follower'],
   endpoint: false
 }
 
